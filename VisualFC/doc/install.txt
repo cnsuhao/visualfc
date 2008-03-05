@@ -1,0 +1,44 @@
+VisualFC Install for VS60/VS2005/VS2008
+
+****************************************************
+---------decompress zip  -------------
+
+decompress vfc0.75_bin.zip to C:\
+
+C:\VISUALFC
+©À©¤bin
+©À©¤doc
+©¸©¤tools
+
+if you use WTL ClassWizard dialog font eidt function, 
+you can copy C:\VISUALFC\bin\vfcfonts.h to WTL directory wtl80\include
+
+*****************************************************
+-------- Install for VS60/EVC4 --------
+
+Run VS60/EVC4.0
+
+VS60 MainMenu Tools -> Customize -> Add-ins and Macro Files -> Browse
+and Open C:\VisualFC\bin\FreeCode.dll (name is "FreeCode for VS60 Add-in")
+
+VS60 Toolbar button
+VFC ClassWizard -> WTL ClassWizard and WinxGui ClassWizard
+
+****************************************************
+-------- Install for VS2005/VS2008 ------------
+
+Run C:\VISUALFC\bin\RegFreeCodeNET.bat to "regsvr32 FreeCodeNET.dll"
+
+EDIT C:\VISUALFC\bin\InstallVS2005.reg and InstallVS2008.reg
+"SatelliteDLLPath"="c:\\VisualFC\\bin"
+"SatelliteDLLName"="FreeCodeNET.dll"
+and change "c:\\VisualFC\\bin" to your real directory
+
+Run C:\VISUALFC\bin\InstallVS2005.reg to install for vs2005
+Run C:\VISUALFC\bin\InstallVS2008.reg to install for vs2008
+
+if your install VisualFC to toolbar, you can open vs2005/vs2008 -> tools ->customize->addin
+drop VisualFC to VS2008 toolbar 
+restart vs2008 is ok.
+
+VisualFC -> WTL ClassWizard and WinxGui ClassWizard
