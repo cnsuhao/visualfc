@@ -1,0 +1,20 @@
+欢迎使用 VisualFC for VS60/VS2005/VS2008 Add-in
+
+一 安装
+
+VS60菜单 Tools->Customeze...->Add-ins and Macro Files ->Browse...
+选择FreeCode.dll安装即可，安装后插件名为 FreeCode for VS60 Add-in,
+安装后将有一个新的FreeCode工具栏,目前只有一个功能按钮-类向导,名称为"VFC ClassWizard".
+
+VS2005/vs2008安装
+首先注册FreecodeNET.dll，运行RegFreeCodeNET.bat或直接执行regsvr32.exe FreeCodeNET.dll即可
+编辑InstallVS2005.reg/InstallVS2008.reg文件，将其中的路径找成实际安装的路径即可
+"SatelliteDLLPath"="c:\\FreeCode\\bin"
+然后打开VS2005/VS2008->工具->自定义->命令->外接程序
+将FreeCodeNET的VisualFC拖到工具栏上即可。
+
+二 项目主页
+http://code.google.com/p/visualfc
+
+三 中文说明
+http://blog.csdn.net/visualfc
