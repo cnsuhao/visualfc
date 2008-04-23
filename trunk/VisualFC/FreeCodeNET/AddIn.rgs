@@ -1,0 +1,56 @@
+HKCR
+{
+	FreeCodeNET.Connect.1 = s 'Connect Class'
+	{
+		CLSID = s '{79936A05-5DC7-4DFE-9ADB-F213C74BAAAE}'
+	}
+	FreeCodeNET.Connect = s 'Connect Class'
+	{
+		CLSID = s '{79936A05-5DC7-4DFE-9ADB-F213C74BAAAE}'
+		CurVer = s 'FreeCodeNET.Connect.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove '{79936A05-5DC7-4DFE-9ADB-F213C74BAAAE}' = s 'Connect Class'
+		{
+			ProgID = s 'FreeCodeNET.Connect.1'
+			VersionIndependentProgID = s 'FreeCodeNET.Connect'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{0ABF36DB-A1DF-4F7D-99C6-6C2A408D12BA}'
+		}
+	}
+}
+
+HKCU
+{
+	NoRemove 'SOFTWARE'
+	{
+		NoRemove 'Microsoft'
+		{
+			NoRemove 'VisualStudio'
+			{
+				NoRemove '8.0'
+				{
+					NoRemove 'AddIns'
+					{
+						ForceRemove 'FreeCodeNET.Connect'
+						{
+							val LoadBehavior = d 1
+							val CommandLineSafe = d 0
+							val CommandPreload = d 1
+							val FriendlyName = s 'FreeCodeNET'
+							val Description = s 'FreeCodeNET'
+							val AboutBoxDetails = s 'FreeCodeNET'
+							val AboutBoxIcon = s '%MODULE%,1'
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
