@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FCWizard - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/FCWizard.res" /d "NDEBUG" "F:\VFC_Projects\Export\VisualFC\FCWizard\FCWizard.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1B.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /FR"Release/" /Fp"Release/FCWizard.pch" /YX"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /Zm256 /c 
+"F:\VFC_Projects\Export\VisualFC\FCWizard\FCWizard.cpp"
+"F:\VFC_Projects\Export\VisualFC\FCWizard\cbparser\parserthread.cpp"
+"F:\VFC_Projects\Export\VisualFC\FCWizard\resources\ResAccelerators.cpp"
+"F:\VFC_Projects\Export\VisualFC\FCWizard\resources\ResDialog.cpp"
+"F:\VFC_Projects\Export\VisualFC\FCWizard\resources\ResMenu.cpp"
+"F:\VFC_Projects\Export\VisualFC\FCWizard\resources\Resources.cpp"
+"F:\VFC_Projects\Export\VisualFC\FCWizard\resources\ResToolbar.cpp"
+"F:\VFC_Projects\Export\VisualFC\FCWizard\cbparser\token.cpp"
+"F:\VFC_Projects\Export\VisualFC\FCWizard\cbparser\tokenizer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1B.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /FR"Release/" /Fp"Release/FCWizard.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /Zm256 /c 
+"F:\VFC_Projects\Export\VisualFC\FCWizard\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1D.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wxbase28.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/vfc_core.pdb" /machine:I386 /def:".\FCWizard.def" /out:"../bin/vfc_core.dll" /implib:"Release/vfc_core.lib" 
+.\Release\FCWizard.obj
+.\Release\parserthread.obj
+.\Release\ResAccelerators.obj
+.\Release\ResDialog.obj
+.\Release\ResMenu.obj
+.\Release\Resources.obj
+.\Release\ResToolbar.obj
+.\Release\StdAfx.obj
+.\Release\token.obj
+.\Release\tokenizer.obj
+.\Release\FCWizard.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1D.tmp"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.bat" with contents
+[
+@echo off
+regsvr32 /s /c "\VFC_Projects\Export\VisualFC\bin\vfc_core.dll"
+echo regsvr32 exec. time > ".\Release\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1E.bat"
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+FCWizard.cpp
+F:\VFC_Projects\Export\VisualFC\FCWizard\././cbparser/parserthread.h(56) : warning C4309: 'default argument' : truncation of constant value
+F:\VFC_Projects\Export\VisualFC\FCWizard\./codeparser.h(1072) : warning C4552: '>=' : operator has no effect; expected operator with side-effect
+F:\VFC_Projects\Export\VisualFC\FCWizard\./codeupdate.h(330) : warning C4552: '>=' : operator has no effect; expected operator with side-effect
+parserthread.cpp
+F:\VFC_Projects\Export\VisualFC\FCWizard\cbparser\token.h(12) : warning C4284: return type for 'TokensArray::reverse_iterator::operator ->' is 'class Token ** ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+F:\VFC_Projects\Export\VisualFC\FCWizard\cbparser\token.h(12) : warning C4284: return type for 'TokensArray::const_reverse_iterator::operator ->' is 'class Token *const * ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+F:\VFC_Projects\Export\VisualFC\FCWizard\cbparser\parserthread.h(56) : warning C4309: 'default argument' : truncation of constant value
+ResAccelerators.cpp
+ResDialog.cpp
+ResMenu.cpp
+Resources.cpp
+ResToolbar.cpp
+token.cpp
+F:\VFC_Projects\Export\VisualFC\FCWizard\cbparser\token.h(12) : warning C4284: return type for 'TokensArray::reverse_iterator::operator ->' is 'class Token ** ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+F:\VFC_Projects\Export\VisualFC\FCWizard\cbparser\token.h(12) : warning C4284: return type for 'TokensArray::const_reverse_iterator::operator ->' is 'class Token *const * ' (ie; not a UDT or reference to a UDT.  Will produce errors if applied using infix notation)
+tokenizer.cpp
+Linking...
+   Creating library Release/vfc_core.lib and object Release/vfc_core.exp
+LINK : warning LNK4089: all references to "ADVAPI32.dll" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "OLEAUT32.dll" discarded by /OPT:REF
+<h3>Output Window</h3>
+Performing registration
+
+
+
+<h3>Results</h3>
+vfc_core.dll - 0 error(s), 10 warning(s)
+</pre>
+</body>
+</html>
